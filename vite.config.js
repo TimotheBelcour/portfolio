@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/portfolio-but-informatique/',
+  base: '/portfolio/',
   test: {
     environment: 'jsdom',
     globals: true,
