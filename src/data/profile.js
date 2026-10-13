@@ -22,7 +22,7 @@ export const profile = {
 export const stage = {
   active: true,
   label: 'Recherche de stage',
-  duration: '14 semaines',
+  duration: '14 à 16 semaines',
   period: 'mars à juin 2027',
   domaine: 'Développement informatique',
   mobilite: 'Grand Est et alentours — permis B, véhiculé',

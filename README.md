@@ -4,7 +4,7 @@ Portfolio personnel initialement développé en 2ème année de BUT Informatique
 Il présente mon parcours, mes expériences professionnelles, mes projets académiques et mes compétences techniques, à travers un site web construit avec React et Vite.
 
 🔗 **En ligne** : [timothebelcour.github.io/portfolio](https://timothebelcour.github.io/portfolio/)  
-🎯 **Recherche un stage de 14 semaines** — développement informatique, de mars à juin 2027.
+🎯 **Recherche un stage de 14 à 16 semaines** — développement informatique, de mars à juin 2027.
 
 ---
 

@@ -27,7 +27,7 @@ const cardHover = {
 const stats = [
   { value: '13',   label: 'Projets réalisés'    },
   { value: '6',    label: 'Compétences BUT'     },
-  { value: '3',    label: 'mois chez VELUX'     },
+  { value: '8',    label: 'semaines chez VELUX'     },
 ]
 
 const techStack = ['JavaScript', 'React', 'PHP', 'Docker', 'Node-RED', 'SQL']
