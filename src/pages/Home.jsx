@@ -31,7 +31,7 @@ const stats = [
   { value: '8',    label: 'semaines chez VELUX'     },
 ]
 
-const techStack = ['JavaScript', 'React', 'PHP', 'Docker', 'Node-RED', 'SQL']
+const techStack = ['JavaScript', 'PHP', 'SQL', 'Docker', 'Git', 'Node-RED']
 
 /* ── Carte flottante autour de la photo (desktop only) ─────── */
 
@@ -218,10 +218,10 @@ export default function Home() {
           <div className="fade-in delay-500 flex-shrink-0 flex justify-center lg:justify-end mt-14 lg:mt-0">
             <div className="relative lg:p-10">
 
-              <FloatingCard className="animate-float -top-2 -left-2"   letter="⚛" label="React"   letterClass="text-sky-400"    borderColor="border-sky-500/25"    bgColor="bg-sky-500/10" />
+              <FloatingCard className="animate-float -top-2 -left-2"   letter="JS" label="JavaScript" letterClass="text-yellow-400" borderColor="border-yellow-500/25" bgColor="bg-yellow-500/10" />
               <FloatingCard className="animate-float-slow -bottom-2 -right-2" letter="🐳" label="Docker"  letterClass="text-cyan-400"   borderColor="border-cyan-500/25"   bgColor="bg-cyan-500/10" />
               <FloatingCard className="animate-float-alt -bottom-2 -left-2"  letter="P"  label="PHP"     letterClass="text-violet-400" borderColor="border-violet-500/25" bgColor="bg-violet-500/10" />
-              <FloatingCard className="animate-float-last -top-2 -right-2"   letter="F"  label="Flutter" letterClass="text-indigo-400" borderColor="border-indigo-500/25" bgColor="bg-indigo-500/10" />
+              <FloatingCard className="animate-float-last -top-2 -right-2"   letter="G"  label="Git"     letterClass="text-orange-400" borderColor="border-orange-500/25" bgColor="bg-orange-500/10" />
 
               <div className="relative">
                 <div
