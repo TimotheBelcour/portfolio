@@ -33,14 +33,14 @@ export const stage = {
 export const experiences = [
   {
     id: 'velux',
-    title: 'Stagiaire développeur dans l\'équipe IIoT (VIP-Core)',
+    title: 'Stagiaire développeur dans l\'équipe IIoT',
     company: 'VELUX',
     place: 'Chemaudin-et-Vaux',
     period: 'juin à août 2026',
     current: false,
     projectSlug: 'velux-node-red-vip',
     summary:
-      "Stage de 8 semaines au sein de l'équipe IIoT (VIP-Core). Conception et développement d'un package de trois nœuds Node-RED permettant d'envoyer des messages normalisés vers les machines de production via MQTT.",
+      "Stage de 8 semaines au sein de l'équipe IIoT. Conception et développement d'un package de trois nœuds Node-RED permettant d'envoyer des messages normalisés vers les machines de production via MQTT.",
     highlights: [
       "Envoi d'un télégramme ramené de 13 à 17 blocs assemblés à la main à un seul nœud à configurer",
       'Gestion des erreurs portée de rien du tout à 7 situations distinguées',

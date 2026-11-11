@@ -192,7 +192,7 @@ export const projects = [
     duration: '8 semaines',
     team: 'Équipe IIoT internationale',
     context:
-      "Premier stage de développement, réalisé au VELUX Technology Centre de Chemaudin-et-Vaux au sein de l'équipe IIoT (VIP-Core), du 15 juin au 7 août 2026. L'équipe travaille sur les objets connectés industriels du groupe. Ma mission portait sur un besoin concret et répétitif : envoyer un télégramme normalisé vers une machine de production n'était pas un simple envoi de message, mais un échange complet en quatre temps : s'abonner aux adresses de réponse, publier la question, trier les réponses reçues, puis en extraire la valeur utile. Fait à la main, cet enchaînement produisait un assemblage d'une quinzaine de blocs à reconstruire à chaque usage.",
+      "Premier stage de développement, réalisé au VELUX Technology Centre de Chemaudin-et-Vaux au sein de l'équipe IIoT, du 15 juin au 7 août 2026. L'équipe travaille sur les objets connectés industriels du groupe. Ma mission portait sur un besoin concret et répétitif : envoyer un télégramme normalisé vers une machine de production n'était pas un simple envoi de message, mais un échange complet en quatre temps : s'abonner aux adresses de réponse, publier la question, trier les réponses reçues, puis en extraire la valeur utile. Fait à la main, cet enchaînement produisait un assemblage d'une quinzaine de blocs à reconstruire à chaque usage.",
     objectives: [
       "Réduire le travail de mise en œuvre d'un envoi de télégramme",
       "Abaisser le niveau requis pour qu'un membre non spécialiste de MQTT puisse envoyer un télégramme",
@@ -236,22 +236,22 @@ export const projects = [
     featured: true,
     title: 'Flipper sous Unity',
     description:
-      "Jeu de flipper en 3D développé sous Unity en équipe de quatre, au semestre 5, sur le thème des Vosges en hiver. J'ai créé et géré le dépôt Git de l'équipe et développé la partie flipper du jeu.",
+      "Jeu de flipper en 3D développé sous Unity en équipe de quatre, au semestre 5, sur le thème des Vosges en hiver. J'ai créé et géré le dépôt de l'équipe sous Unity Version Control et développé la partie flipper du jeu.",
     image: flipperGallery[0],
     gallery: flipperGallery,
     highlights: [
       "Jeu de flipper en 3D développé sous Unity, en équipe de quatre",
-      "Création et gestion du dépôt Git partagé par l'équipe",
+      "Création et gestion du dépôt partagé de l'équipe sous Unity Version Control",
       "Développement de la partie flipper du jeu",
       "Plateau sur le thème des Vosges en hiver : bumpers, cibles, rampes et igloo",
     ],
-    tags: ['Unity', 'C#', 'Git'],
+    tags: ['Unity', 'C#', 'Unity Version Control'],
     competences: ['realiser', 'collaborer'],
     status: 'En cours',
     duration: 'Semestre 5',
     team: 'Équipe de 4',
     context:
-      "Projet de troisième année du BUT Informatique : réaliser en équipe de quatre un jeu de flipper en 3D sous Unity. Le plateau reprend le thème des Vosges en hiver. Dans l'équipe, j'ai mis en place et géré le dépôt Git commun, et je me suis chargé de la partie flipper du jeu.",
+      "Projet de troisième année du BUT Informatique : réaliser en équipe de quatre un jeu de flipper en 3D sous Unity. Le plateau reprend le thème des Vosges en hiver. Dans l'équipe, j'ai mis en place et géré le dépôt commun sous Unity Version Control, et je me suis chargé de la partie flipper du jeu.",
   },
 
   {

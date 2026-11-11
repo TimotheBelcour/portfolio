@@ -221,14 +221,14 @@ export default function About() {
               <h3 className="text-lg font-semibold text-slate-200">Présentation</h3>
               <p className="text-slate-400 leading-relaxed">
                 Étudiant en 3ème année de BUT Informatique à l'IUT de Saint-Dié-des-Vosges,
-                je m'intéresse particulièrement aux nouvelles technologies, en particulier
+                je m'intéresse particulièrement aux nouvelles technologies, notamment
                 l'intelligence artificielle, le développement et les jeux vidéo. Ce portfolio documente mes projets
                 et mes apprentissages au fil de la formation. J'explore progressivement
                 différents domaines du numérique afin de construire mon projet professionnel.
               </p>
               <p className="text-slate-400 leading-relaxed">
                 À l'été 2026, j'ai effectué mon premier stage de développement chez VELUX,
-                au sein de l'équipe IIoT (VIP-Core). J'y ai développé des composants Node-RED
+                au sein de l'équipe IIoT. J'y ai développé des composants Node-RED
                 réutilisables en JavaScript pour les échanges MQTT entre équipements
                 industriels, dans une équipe agile internationale où les échanges se font en
                 anglais. Cette expérience m'a montré ce que représente le développement dans

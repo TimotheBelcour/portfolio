@@ -26,7 +26,7 @@ const cardHover = {
 }
 
 const stats = [
-  { value: String(projects.length), label: 'Projets réalisés' },
+  { value: String(projects.length), label: 'Projets présentés' },
   { value: '6',    label: 'Compétences BUT'     },
   { value: '8',    label: 'semaines chez VELUX'     },
 ]

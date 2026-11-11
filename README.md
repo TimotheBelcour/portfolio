@@ -43,7 +43,7 @@ Il présente mon parcours, mes expériences professionnelles, mes projets acadé
 | Projet | Description | Stack |
 |---|---|---|
 | **Node-RED : injection de télégrammes** *(stage VELUX)* | Package de trois nœuds Node-RED pour l'envoi de messages normalisés vers les machines de production via MQTT : de 13 à 17 blocs assemblés à la main à un seul nœud à configurer | `JavaScript` `Node-RED` `MQTT` `Docker` |
-| **Flipper sous Unity** *(BUT3, en cours)* | Jeu de flipper en 3D sur le thème des Vosges, en équipe de quatre : création et gestion du dépôt Git, développement de la partie flipper | `Unity` `C#` `Git` |
+| **Flipper sous Unity** *(BUT3, en cours)* | Jeu de flipper en 3D sur le thème des Vosges, en équipe de quatre : création et gestion du dépôt sous Unity Version Control, développement de la partie flipper | `Unity` `C#` `Unity Version Control` |
 | **Votendo** | Plateforme web de vote de jeux vidéo (SAE3) : authentification bcrypt, rôles, classements, HTTPS validé par Wireshark, MCD/MLD/UML | `PHP` `MySQL` `Apache` `OpenSSL` |
 | **SAE4 : audit de GGVote** | Audit sécurité, robustesse et performance d'une application existante, puis mise en œuvre du plan d'amélioration | `PHP` `Docker` `MariaDB` `SQL` |
 | **Flutter Films** | Application mobile cinéma : recherche d'acteurs, fiches films, carte interactive et quiz, données via l'API TMDB | `Flutter` `Dart` `TMDB API` |
