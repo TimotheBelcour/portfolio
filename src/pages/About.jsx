@@ -130,7 +130,7 @@ function ProfileCard() {
                   {stage.label}
                 </p>
                 <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                  {stage.duration} — {stage.period}
+                  {stage.duration}, de {stage.period}
                 </p>
               </div>
             )}
@@ -152,7 +152,7 @@ function ProfileCard() {
               <svg className="w-4 h-4 shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
               </svg>
-              BUT Info — {profile.year}
+              BUT Info, {profile.year}
             </div>
           </div>
 
@@ -221,8 +221,8 @@ export default function About() {
               <h3 className="text-lg font-semibold text-slate-200">Présentation</h3>
               <p className="text-slate-400 leading-relaxed">
                 Étudiant en 3ème année de BUT Informatique à l'IUT de Saint-Dié-des-Vosges,
-                je m'intéresse particulièrement aux nouvelles technologies — intelligence
-                artificielle, développement et jeux vidéo. Ce portfolio documente mes projets
+                je m'intéresse particulièrement aux nouvelles technologies, en particulier
+                l'intelligence artificielle, le développement et les jeux vidéo. Ce portfolio documente mes projets
                 et mes apprentissages au fil de la formation. J'explore progressivement
                 différents domaines du numérique afin de construire mon projet professionnel.
               </p>
@@ -240,7 +240,7 @@ export default function About() {
                 Norske Skog Golbey, site historiquement spécialisé dans le papier journal
                 et aujourd'hui engagé dans la production de papier pour carton ondulé. Cette
                 expérience industrielle m'a apporté rigueur, autonomie et sens des
-                responsabilités — des réflexes que je retrouve aujourd'hui dans mes projets
+                responsabilités, des réflexes que je retrouve aujourd'hui dans mes projets
                 informatiques.
               </p>
               <p className="text-slate-400 leading-relaxed">
@@ -286,7 +286,7 @@ export default function About() {
                           )}
                         </p>
                         <p className="text-sm text-slate-500 mt-0.5">
-                          {f.school} — {f.detail}
+                          {f.school}, {f.detail}
                         </p>
                       </div>
                       <span className="text-xs text-slate-600 shrink-0 font-mono mt-0.5">
@@ -306,8 +306,8 @@ export default function About() {
               <div className="space-y-4">
                 {[
                   { label: 'Langages',              items: stack.langages   },
-                  { label: 'Frameworks & runtimes', items: stack.frameworks },
                   { label: 'Outils & environnements', items: stack.outils   },
+                  { label: 'Méthodes',              items: stack.methodes   },
                 ].map(({ label, items }) => (
                   <div key={label} className="space-y-2">
                     <p className="text-xs uppercase tracking-widest text-slate-600">{label}</p>

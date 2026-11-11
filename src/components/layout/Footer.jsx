@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="border-t border-slate-800 mt-auto">
       <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-slate-500 text-center sm:text-left">
-          © {new Date().getFullYear()} {profile.firstName} {profile.lastName} — Portfolio BUT Informatique
+          © {new Date().getFullYear()} {profile.firstName} {profile.lastName}, portfolio BUT Informatique
         </p>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
           <Link to="/about" className={linkClass}>

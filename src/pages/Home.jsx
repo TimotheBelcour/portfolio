@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { competences } from '../data/competences'
 import { profile, stage } from '../data/profile'
+import { projects } from '../data/projects'
 import Reveal from '../components/ui/Reveal'
 
 /* ── Constantes ────────────────────────────────────────────── */
@@ -25,7 +26,7 @@ const cardHover = {
 }
 
 const stats = [
-  { value: '13',   label: 'Projets réalisés'    },
+  { value: String(projects.length), label: 'Projets réalisés' },
   { value: '6',    label: 'Compétences BUT'     },
   { value: '8',    label: 'semaines chez VELUX'     },
 ]
@@ -78,13 +79,13 @@ function StageBanner() {
             </div>
             <p className="text-lg sm:text-xl font-semibold text-slate-100 leading-snug">
               Stage de {stage.duration} en {stage.domaine.toLowerCase()}
-              <span className="text-violet-400"> — {stage.period}</span>
+              <span className="text-violet-400">, de {stage.period}</span>
             </p>
             <p className="text-sm text-slate-400">{stage.mobilite}</p>
           </div>
 
           <a
-            href={`mailto:${profile.email}?subject=Proposition%20de%20stage%20—%20mars%202027`}
+            href={`mailto:${profile.email}?subject=Proposition%20de%20stage%20pour%20mars%202027`}
             className="btn-glow inline-flex shrink-0 items-center justify-center gap-2 px-5 py-3 bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold rounded-xl transition-colors duration-200"
           >
             Proposer un stage
@@ -126,7 +127,7 @@ export default function Home() {
 
             <div className="fade-in inline-flex items-center gap-2 text-xs text-slate-400 bg-slate-900 border border-slate-700/70 rounded-full px-4 py-1.5 w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              BUT Informatique — {profile.year}
+              BUT Informatique, {profile.year}
             </div>
 
             <div className="space-y-2 fade-in-up delay-100">

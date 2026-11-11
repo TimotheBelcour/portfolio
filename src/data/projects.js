@@ -66,6 +66,12 @@ const threejsGallery = imgs(
   'threejs-technical-details',
 )
 
+const flipperGallery = imgs(
+  'flipper-unity',
+  'flipper-vue-jeu',
+  'flipper-editeur-unity',
+)
+
 const dockerGallery = imgs(
   'docker-api',
   'Vision-ixDesktop',
@@ -167,7 +173,7 @@ export const projects = [
     type: 'Stage',
     category: 'pro',
     featured: true,
-    title: 'Node-RED — Package de nœuds pour l\'injection de télégrammes industriels',
+    title: 'Node-RED : package de nœuds pour l\'injection de télégrammes industriels',
     description:
       "Stage de 8 semaines chez VELUX, au sein de l'équipe IIoT. Conception et développement d'un package de trois nœuds Node-RED permettant d'envoyer des messages normalisés vers les machines de production via MQTT. Avant ce projet, chaque envoi demandait de réassembler à la main une quinzaine de blocs et d'écrire du JavaScript, ce qui réservait l'outil aux membres expérimentés de l'équipe.",
     image: veluxGallery[0],
@@ -186,7 +192,7 @@ export const projects = [
     duration: '8 semaines',
     team: 'Équipe IIoT internationale',
     context:
-      "Premier stage de développement, réalisé au VELUX Technology Centre de Chemaudin-et-Vaux au sein de l'équipe IIoT (VIP-Core), du 15 juin au 7 août 2026. L'équipe travaille sur les objets connectés industriels du groupe. Ma mission portait sur un besoin concret et répétitif : envoyer un télégramme normalisé vers une machine de production n'était pas un simple envoi de message, mais un échange complet en quatre temps — s'abonner aux adresses de réponse, publier la question, trier les réponses reçues, puis en extraire la valeur utile. Fait à la main, cet enchaînement produisait un assemblage d'une quinzaine de blocs à reconstruire à chaque usage.",
+      "Premier stage de développement, réalisé au VELUX Technology Centre de Chemaudin-et-Vaux au sein de l'équipe IIoT (VIP-Core), du 15 juin au 7 août 2026. L'équipe travaille sur les objets connectés industriels du groupe. Ma mission portait sur un besoin concret et répétitif : envoyer un télégramme normalisé vers une machine de production n'était pas un simple envoi de message, mais un échange complet en quatre temps : s'abonner aux adresses de réponse, publier la question, trier les réponses reçues, puis en extraire la valeur utile. Fait à la main, cet enchaînement produisait un assemblage d'une quinzaine de blocs à reconstruire à chaque usage.",
     objectives: [
       "Réduire le travail de mise en œuvre d'un envoi de télégramme",
       "Abaisser le niveau requis pour qu'un membre non spécialiste de MQTT puisse envoyer un télégramme",
@@ -194,13 +200,13 @@ export const projects = [
       "Assurer la pérennité du résultat : distribution sur l'infrastructure existante et documentation permettant à quelqu'un d'autre de reprendre le code",
     ],
     difficulties: [
-      "Une refonte à mi-parcours : la première version stockait les valeurs dans le formulaire de configuration, donc figées. Le nœud renvoyait toujours le même message alors que l'usage réel demandait des valeurs changeant à chaque envoi — le code respectait la spécification mais manquait son but",
+      "Une refonte à mi-parcours : la première version stockait les valeurs dans le formulaire de configuration, donc figées. Le nœud renvoyait toujours le même message alors que l'usage réel demandait des valeurs changeant à chaque envoi. Le code respectait la spécification mais manquait son but",
       "Un faux positif difficile à détecter : certains envois retournaient un succès alors que le résultat métier n'était pas le bon, la condition de succès étant trop permissive",
       "Un déploiement qui semblait réussi mais dont le composant restait invisible : la cause était procédurale et non technique, chaque étape s'exécutant correctement sur une entrée périmée",
       "Apprendre Node-RED en même temps que développer l'outil, sans le connaître au départ",
     ],
     solutions: [
-      "Séparation de la structure du télégramme, conservée dans la configuration, et des valeurs, fournies à l'exécution par le message entrant — ce qui rend le composant utilisable dans une chaîne automatique",
+      "Séparation de la structure du télégramme, conservée dans la configuration, et des valeurs, fournies à l'exécution par le message entrant, ce qui rend le composant utilisable dans une chaîne automatique",
       "Distinction explicite entre accusé de réception et validité du résultat métier, avec formalisation des succès partiels",
       "Registre interne des requêtes en cours, indexé par identifiant, permettant à un même nœud de traiter plusieurs échanges simultanés sans confusion",
       "Abonnement établi une fois au démarrage du nœud plutôt qu'à chaque envoi, supprimant la temporisation fixe et l'hypothèse fragile qu'elle masquait",
@@ -211,13 +217,41 @@ export const projects = [
       "Développer dans un existant qu'on ne maîtrise pas entièrement : la vraie différence avec un projet scolaire, où l'on connaît tout le périmètre",
       "Travailler en méthode agile : les points quotidiens, que je voyais d'abord comme du temps perdu, sont ce qui a permis de repérer à mi-parcours que ma conception s'écartait de l'objectif",
       "Montrer son travail régulièrement plutôt que d'attendre la fin : les trois corrections importantes du projet sont venues d'une relecture, pas d'une erreur constatée à l'exécution",
-      "Travailler et communiquer en anglais au quotidien, à l'oral comme à l'écrit — le domaine où j'ai le plus progressé, et celui qui m'inquiétait le plus en arrivant",
+      "Travailler et communiquer en anglais au quotidien, à l'oral comme à l'écrit : c'est le domaine où j'ai le plus progressé, et celui qui m'inquiétait le plus en arrivant",
       "Concevoir pour la maintenance : un composant utilisable huit semaines puis abandonné faute de documentation n'aurait servi à rien",
     ],
     result:
-      "Le package a été publié sur le dépôt interne, déployé sur l'environnement de test et validé en conditions réelles, accompagné de 5 pages de documentation et d'une aide intégrée à chaque nœud. Envoyer un télégramme ne demande plus qu'un nœud correctement paramétré, là où il fallait auparavant assembler entre 13 et 17 blocs et écrire du JavaScript. Trois limites restent identifiées et documentées : certaines familles de télégrammes hors périmètre, l'indication d'une réponse de routage laissée à l'utilisateur, et une validation reposant sur des tests manuels — la première dette technique du projet. Le travail a été présenté en revue de sprint devant l'équipe, avec démonstration en direct.",
+      "Le package a été publié sur le dépôt interne, déployé sur l'environnement de test et validé en conditions réelles, accompagné de 5 pages de documentation et d'une aide intégrée à chaque nœud. Envoyer un télégramme ne demande plus qu'un nœud correctement paramétré, là où il fallait auparavant assembler entre 13 et 17 blocs et écrire du JavaScript. Trois limites restent identifiées et documentées : certaines familles de télégrammes hors périmètre, l'indication d'une réponse de routage laissée à l'utilisateur, et une validation reposant sur des tests manuels, qui constitue la première dette technique du projet. Le travail a été présenté en revue de sprint devant l'équipe, avec démonstration en direct.",
     confidential:
       "Projet réalisé en entreprise : les captures ont été sélectionnées et recadrées pour ne montrer aucune donnée d'infrastructure. Le code source et les formats de messages internes ne sont pas publiés.",
+  },
+
+  {
+    id: 14,
+    slug: 'flipper-unity',
+    year: '2026',
+    periode: 'but3',
+    type: 'Jeu vidéo',
+    category: 'jeu',
+    featured: true,
+    title: 'Flipper sous Unity',
+    description:
+      "Jeu de flipper en 3D développé sous Unity en équipe de quatre, au semestre 5, sur le thème des Vosges en hiver. J'ai créé et géré le dépôt Git de l'équipe et développé la partie flipper du jeu.",
+    image: flipperGallery[0],
+    gallery: flipperGallery,
+    highlights: [
+      "Jeu de flipper en 3D développé sous Unity, en équipe de quatre",
+      "Création et gestion du dépôt Git partagé par l'équipe",
+      "Développement de la partie flipper du jeu",
+      "Plateau sur le thème des Vosges en hiver : bumpers, cibles, rampes et igloo",
+    ],
+    tags: ['Unity', 'C#', 'Git'],
+    competences: ['realiser', 'collaborer'],
+    status: 'En cours',
+    duration: 'Semestre 5',
+    team: 'Équipe de 4',
+    context:
+      "Projet de troisième année du BUT Informatique : réaliser en équipe de quatre un jeu de flipper en 3D sous Unity. Le plateau reprend le thème des Vosges en hiver. Dans l'équipe, j'ai mis en place et géré le dépôt Git commun, et je me suis chargé de la partie flipper du jeu.",
   },
 
   {
@@ -230,7 +264,7 @@ export const projects = [
     featured: true,
     title: 'Votendo',
     description:
-      "Le projet le plus complet que j'ai réalisé au semestre 3 : une plateforme web de vote de jeux vidéo en PHP/MySQL. Il m'a permis de travailler plusieurs aspects différents — développement, base de données, sécurité, administration Apache/HTTPS, analyse réseau, conception UML/MCD, gestion de projet et documentation en anglais.",
+      "Le projet le plus complet que j'ai réalisé au semestre 3 : une plateforme web de vote de jeux vidéo en PHP/MySQL. Il m'a permis de travailler plusieurs aspects différents : développement, base de données, sécurité, administration Apache/HTTPS, analyse réseau, conception UML/MCD, gestion de projet et documentation en anglais.",
     image: votendoGallery[0],
     gallery: votendoGallery,
     highlights: [
@@ -284,7 +318,7 @@ export const projects = [
     type: 'Audit',
     category: 'devops',
     featured: true,
-    title: 'SAE4 — Audit et amélioration d\'une application complexe',
+    title: 'SAE4 : audit et amélioration d\'une application complexe',
     description:
       "Projet de SAE4 réalisé en binôme consistant à auditer puis améliorer l'application GGVote. Le travail a porté sur la sécurité, la robustesse, l'optimisation SQL, la containerisation Docker et la maintenabilité du code.",
     image: sae4Gallery[0],
@@ -337,7 +371,7 @@ export const projects = [
       "Mettre en place une démarche d'amélioration continue à partir d'un audit",
     ],
     result:
-      "L'audit a débouché sur plusieurs améliorations techniques de GGVote : sécurité de la base de données, gestion des erreurs, organisation du code et fiabilité de l'environnement Docker. Les fonctionnalités existantes de l'application ont été conservées — le travail a surtout porté sur la qualité technique (sécurité, robustesse, maintenabilité) plutôt que sur l'ajout de nouvelles fonctionnalités.",
+      "L'audit a débouché sur plusieurs améliorations techniques de GGVote : sécurité de la base de données, gestion des erreurs, organisation du code et fiabilité de l'environnement Docker. Les fonctionnalités existantes de l'application ont été conservées : le travail a surtout porté sur la qualité technique (sécurité, robustesse, maintenabilité) plutôt que sur l'ajout de nouvelles fonctionnalités.",
   },
 
   {
@@ -405,7 +439,7 @@ export const projects = [
     type: '3D / Web',
     category: 'web',
     featured: true,
-    title: 'Three.js — Hockney',
+    title: 'Three.js : la scène de Hockney en 3D',
     description:
       "Reproduction 3D interactive du tableau « A Bigger Splash » de David Hockney, réalisée avec Three.js et WebGL. La scène (maison, piscine, plongeoir, palmiers, éclaboussure) est affichée à côté de l'œuvre originale, avec une interface qui permet de déplacer le soleil et de changer l'ambiance lumineuse.",
     image: threejsGallery[0],
@@ -523,7 +557,7 @@ export const projects = [
     type: 'Réseau',
     category: 'reseau',
     featured: false,
-    title: 'VirtualBox — Administration Système & Sécurité Réseau',
+    title: 'VirtualBox : administration système et sécurité réseau',
     description:
       "Lab d'administration système et de sécurité réseau monté sous VirtualBox. Mise en place de machines virtuelles Linux interconnectées (NAT/Host-Only), puis sécurisation des accès : authentification SSH par clé, port knocking, tunnel SSH et accès graphique VNC chiffré.",
     image: vboxGallery[0],
@@ -849,9 +883,9 @@ export const projects = [
     type: 'Recherche',
     category: 'recherche',
     featured: false,
-    title: 'VR, AR & MR — Veille et Analyse Technologique',
+    title: 'VR, AR et MR : veille et analyse technologique',
     description:
-      "Travail de veille et d'analyse technologique réalisé en équipe sur les technologies immersives — réalité virtuelle (VR), augmentée (AR) et mixte (MR). État de l'art, comparaison des technologies, identification des usages professionnels (santé, industrie, jeu vidéo) et restitution lors d'une présentation orale devant la promotion.",
+      "Travail de veille et d'analyse technologique réalisé en équipe sur les technologies immersives : réalité virtuelle (VR), augmentée (AR) et mixte (MR). État de l'art, comparaison des technologies, identification des usages professionnels (santé, industrie, jeu vidéo) et restitution lors d'une présentation orale devant la promotion.",
     image: vrarGallery[0],
     gallery: vrarGallery,
     highlights: [

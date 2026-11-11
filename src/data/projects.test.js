@@ -11,7 +11,7 @@ import { competences } from './competences'
  */
 
 const CATEGORIES_CONNUES = [
-  'pro', 'web', 'mobile', 'devops', 'algo', 'systeme', 'reseau', 'recherche',
+  'pro', 'jeu', 'web', 'mobile', 'devops', 'algo', 'systeme', 'reseau', 'recherche',
 ]
 
 describe('catalogue de projets', () => {

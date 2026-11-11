@@ -14,6 +14,7 @@ const CATEGORY_LABELS = {
   systeme:   'Système',
   reseau:    'Réseau',
   recherche: 'Recherche',
+  jeu:       'Jeu vidéo',
 }
 
 /* ── Icônes par catégorie (SVG inline) ─────────────────────────── */
@@ -63,10 +64,15 @@ const CATEGORY_ICONS = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
     </svg>
   ),
+  jeu: (
+    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+    </svg>
+  ),
 }
 
 /* ── Ordre des onglets ─────────────────────────────────────────── */
-const TAB_ORDER = ['all', 'pro', 'web', 'mobile', 'devops', 'algo', 'systeme', 'reseau', 'recherche']
+const TAB_ORDER = ['all', 'pro', 'jeu', 'web', 'mobile', 'devops', 'algo', 'systeme', 'reseau', 'recherche']
 
 /* ── Sous-titre de section ─────────────────────────────────────── */
 function SectionDivider({ title, count }) {
@@ -104,7 +110,7 @@ export default function Projects() {
       <Reveal as="header" className="space-y-3">
         <h1 className="text-4xl font-bold text-slate-100">Projets</h1>
         <p className="text-slate-500 text-lg leading-relaxed">
-          Projets du BUT Informatique et stage en entreprise — {projects.length} projets
+          Projets du BUT Informatique et stage en entreprise : {projects.length} projets
         </p>
       </Reveal>
 
@@ -185,7 +191,7 @@ export default function Projects() {
               <Reveal>
                 <div className="flex items-center gap-3">
                   <span className="text-xs font-mono text-slate-600 bg-slate-900 border border-slate-800 px-2.5 py-1 rounded-md">
-                    {filtered.length} projet{filtered.length > 1 ? 's' : ''} — {CATEGORY_LABELS[activeCategory]}
+                    {filtered.length} projet{filtered.length > 1 ? 's' : ''} dans la catégorie {CATEGORY_LABELS[activeCategory]}
                   </span>
                 </div>
               </Reveal>

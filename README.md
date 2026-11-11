@@ -1,10 +1,10 @@
-# Portfolio BUT Informatique — Timothé Belcour
+# Portfolio BUT Informatique de Timothé Belcour
 
 Portfolio personnel initialement développé en 2ème année de BUT Informatique, mis à jour en 3ème année pour accompagner ma recherche de stage.  
 Il présente mon parcours, mes expériences professionnelles, mes projets académiques et mes compétences techniques, à travers un site web construit avec React et Vite.
 
 🔗 **En ligne** : [timothebelcour.github.io/portfolio](https://timothebelcour.github.io/portfolio/)  
-🎯 **Recherche un stage de 14 à 16 semaines** — développement informatique, de mars à juin 2027.
+🎯 **Recherche un stage de 14 à 16 semaines** en développement informatique, de mars à juin 2027.
 
 ---
 
@@ -23,31 +23,32 @@ Il présente mon parcours, mes expériences professionnelles, mes projets acadé
 
 ## ✦ Fonctionnalités
 
-- **Page d'accueil** — présentation rapide, bandeau de recherche de stage, accès direct aux 6 compétences BUT
-- **Page Projets** — cartes visuelles avec screenshots, highlights et technologies
-- **Pages projets détaillées** — galerie d'images, fonctionnalités, compétences associées, navigation entre projets
-- **Page À propos** — carte profil, expérience professionnelle (timeline), formation, stack technique, contact
-- **6 pages Compétences BUT** — critères d'évaluation, traces et réalisations, projets liés, navigation compétence précédente/suivante
-- **Navbar responsive** — dropdown compétences sur desktop, menu hamburger sur mobile, sticky avec effet blur au scroll
-- **Design dark mode natif** — palette `slate` + accent violet, sobre et lisible
-- **Images optimisées** — captures converties en WebP et chargées à la demande (site complet < 5 Mo)
+- **Page d'accueil** : présentation rapide, bandeau de recherche de stage, accès direct aux 6 compétences BUT
+- **Page Projets** : cartes visuelles avec screenshots, highlights et technologies
+- **Pages projets détaillées** : galerie d'images, fonctionnalités, compétences associées, navigation entre projets
+- **Page À propos** : carte profil, expérience professionnelle (timeline), formation, stack technique, contact
+- **6 pages Compétences BUT** : critères d'évaluation, traces et réalisations, projets liés, navigation compétence précédente/suivante
+- **Navbar responsive** : dropdown compétences sur desktop, menu hamburger sur mobile, sticky avec effet blur au scroll
+- **Design dark mode natif** : palette `slate` + accent violet, sobre et lisible
+- **Images optimisées** : captures converties en WebP et chargées à la demande (site complet < 5 Mo)
 
 ---
 
 ## 📁 Projets présentés
 
-**13 projets**, dont un stage en entreprise, 5 projets phares et 7 travaux plus courts.
+**14 projets**, dont un stage en entreprise, 6 projets phares et 7 travaux plus courts.
 
 ### Projets phares
 
 | Projet | Description | Stack |
 |---|---|---|
-| **Node-RED — Injection de télégrammes** *(stage VELUX)* | Package de trois nœuds Node-RED pour l'envoi de messages normalisés vers les machines de production via MQTT : de 13-17 blocs assemblés à la main à un seul nœud à configurer | `JavaScript` `Node-RED` `MQTT` `Docker` |
+| **Node-RED : injection de télégrammes** *(stage VELUX)* | Package de trois nœuds Node-RED pour l'envoi de messages normalisés vers les machines de production via MQTT : de 13 à 17 blocs assemblés à la main à un seul nœud à configurer | `JavaScript` `Node-RED` `MQTT` `Docker` |
+| **Flipper sous Unity** *(BUT3, en cours)* | Jeu de flipper en 3D sur le thème des Vosges, en équipe de quatre : création et gestion du dépôt Git, développement de la partie flipper | `Unity` `C#` `Git` |
 | **Votendo** | Plateforme web de vote de jeux vidéo (SAE3) : authentification bcrypt, rôles, classements, HTTPS validé par Wireshark, MCD/MLD/UML | `PHP` `MySQL` `Apache` `OpenSSL` |
-| **SAE4 — Audit GGVote** | Audit sécurité, robustesse et performance d'une application existante, puis mise en œuvre du plan d'amélioration | `PHP` `Docker` `MariaDB` `SQL` |
+| **SAE4 : audit de GGVote** | Audit sécurité, robustesse et performance d'une application existante, puis mise en œuvre du plan d'amélioration | `PHP` `Docker` `MariaDB` `SQL` |
 | **Flutter Films** | Application mobile cinéma : recherche d'acteurs, fiches films, carte interactive et quiz, données via l'API TMDB | `Flutter` `Dart` `TMDB API` |
 | **Vision-ix** | API REST conteneurisée, maquettage Figma, interfaces desktop et mobile, tests des endpoints avec Postman | `Docker` `API REST` `Postman` |
-| **Three.js — Hockney** | Scène 3D interactive dans le navigateur, inspirée du travail photographique de David Hockney | `Three.js` `JavaScript` `WebGL` |
+| **Three.js : la scène de Hockney en 3D** | Scène 3D interactive dans le navigateur, inspirée du travail photographique de David Hockney | `Three.js` `JavaScript` `WebGL` |
 
 ### Autres projets
 
@@ -80,8 +81,8 @@ Le portfolio est organisé autour des 6 compétences du référentiel national B
 ### Cloner et installer
 
 ```bash
-git clone https://github.com/TimotheBelcour/portfolio-but-informatique.git
-cd portfolio-but-informatique
+git clone https://github.com/TimotheBelcour/portfolio.git
+cd portfolio
 npm install
 ```
 
@@ -122,7 +123,7 @@ npm run test:watch
 ## ✅ Tests
 
 Les tests sont écrits avec [Vitest](https://vitest.dev/) et [Testing Library](https://testing-library.com/).
-Ils portent sur ce qui casse silencieusement — sans message d'erreur, mais avec un effet visible sur le site :
+Ils portent sur ce qui casse silencieusement, sans message d'erreur mais avec un effet visible sur le site :
 
 | Fichier | Ce qu'il vérifie |
 |---|---|
@@ -137,7 +138,7 @@ Une faute de frappe dans un slug de compétence ne provoque aucune erreur JavaSc
 ## 🗂 Structure du projet
 
 ```
-portfolio-but-informatique/
+portfolio/
 ├── public/
 │   ├── images/              # Screenshots projets et photo profil
 │   └── favicon.svg
@@ -176,10 +177,11 @@ portfolio-but-informatique/
 ## 👤 Auteur
 
 **Timothé Belcour**  
-Étudiant en 3ème année de BUT Informatique — IUT de Saint-Dié-des-Vosges
+Étudiant en 3ème année de BUT Informatique à l'IUT de Saint-Dié-des-Vosges
 
 - GitHub : [@TimotheBelcour](https://github.com/TimotheBelcour)
 - Email : [timothebelcour@outlook.fr](mailto:timothebelcour@outlook.fr)
+- LinkedIn : [linkedin.com/in/timothebelcour](https://www.linkedin.com/in/timothebelcour)
 
 ---
 
@@ -189,5 +191,5 @@ Ce projet est sous licence MIT.
 Vous êtes libre de vous en inspirer, à condition de ne pas le reproduire à l'identique comme votre propre portfolio.
 
 ```
-MIT License — Copyright (c) 2025 Timothé Belcour
+MIT License, Copyright (c) 2025 Timothé Belcour
 ```

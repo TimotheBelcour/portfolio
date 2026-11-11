@@ -10,12 +10,12 @@ export const profile = {
   role: 'Développeur en formation',
   year: '3ème année',
   school: 'IUT de Saint-Dié-des-Vosges',
-  location: 'Remiremont (88) — Vosges',
+  location: 'Remiremont, Vosges (88)',
   email: 'timothebelcour@outlook.fr',
   github: 'https://github.com/TimotheBelcour',
   githubHandle: 'TimotheBelcour',
-  linkedin: 'https://www.linkedin.com/in/timoth%C3%A9-belcour-35654932b/',
-  linkedinLabel: 'linkedin.com/in/timothé-belcour',
+  linkedin: 'https://www.linkedin.com/in/timothebelcour',
+  linkedinLabel: 'linkedin.com/in/timothebelcour',
 }
 
 /* Recherche de stage — affichée en bandeau sur l'accueil */
@@ -25,7 +25,7 @@ export const stage = {
   duration: '14 à 16 semaines',
   period: 'mars à juin 2027',
   domaine: 'Développement informatique',
-  mobilite: 'Grand Est et alentours — permis B, véhiculé',
+  mobilite: 'Mobile dans toute la France, de préférence dans le Grand Est près de Remiremont. Permis B et véhiculé.',
 }
 
 /* ─── Expérience professionnelle ──────────────────────────────── */
@@ -33,10 +33,10 @@ export const stage = {
 export const experiences = [
   {
     id: 'velux',
-    title: 'Stagiaire développeur — Équipe IIoT (VIP-Core)',
+    title: 'Stagiaire développeur dans l\'équipe IIoT (VIP-Core)',
     company: 'VELUX',
     place: 'Chemaudin-et-Vaux',
-    period: 'juin — août 2026',
+    period: 'juin à août 2026',
     current: false,
     projectSlug: 'velux-node-red-vip',
     summary:
@@ -54,10 +54,10 @@ export const experiences = [
   },
   {
     id: 'norske-skog',
-    title: 'Technicien en alternance — BTS Pilotage des Procédés',
+    title: 'Technicien en alternance (BTS Pilotage des Procédés)',
     company: 'Norske Skog Golbey',
     place: 'Golbey',
-    period: '2022 — 2024',
+    period: '2022 à 2024',
     current: false,
     summary:
       "Alternance de deux ans sur un site industriel papetier, historiquement spécialisé dans le papier journal et aujourd'hui engagé dans la production de papier pour carton ondulé.",
@@ -78,15 +78,15 @@ export const formations = [
     id: 'but',
     title: 'BUT Informatique',
     school: 'IUT de Saint-Dié-des-Vosges',
-    period: '2024 — 2027',
+    period: '2024 à 2027',
     detail: '3ème année',
     current: true,
   },
   {
     id: 'bts',
     title: 'BTS Pilotage des Procédés',
-    school: 'CFA Papetier de Gérardmer — en alternance',
-    period: '2022 — 2024',
+    school: 'CFA Papetier de Gérardmer, en alternance',
+    period: '2022 à 2024',
     detail: 'Obtenu',
     current: false,
   },
@@ -94,7 +94,7 @@ export const formations = [
     id: 'bac',
     title: 'Baccalauréat Technologique STI2D',
     school: 'Spécialité ITEC',
-    period: '2019 — 2022',
+    period: '2019 à 2022',
     detail: 'Obtenu',
     current: false,
   },
@@ -103,15 +103,15 @@ export const formations = [
 /* ─── Stack technique ─────────────────────────────────────────── */
 
 export const stack = {
-  langages: ['JavaScript', 'PHP', 'Java', 'C', 'Python', 'Dart', 'SQL', 'HTML/CSS'],
-  frameworks: ['React', 'Flutter', 'Node-RED', 'Tailwind CSS'],
-  outils: ['Docker', 'Git', 'MySQL', 'MQTT', 'JSON', 'Linux', 'Apache', 'VS Code'],
+  langages: ['JavaScript', 'PHP', 'SQL', 'HTML/CSS', 'Java', 'C'],
+  outils: ['Git', 'Docker', 'MySQL', 'Node-RED', 'MQTT', 'Linux'],
+  methodes: ['Agile (Scrum)', 'Tests', 'Documentation technique'],
 }
 
 /* ─── Langues et divers ───────────────────────────────────────── */
 
 export const infos = [
-  { label: 'Anglais', value: 'B1 — échanges professionnels en équipe internationale' },
+  { label: 'Anglais', value: 'B1, échanges professionnels en équipe internationale' },
   { label: 'Permis B', value: 'Véhiculé' },
   { label: 'Volley-ball', value: 'Joueur en club et entraîneur des cadets à Remiremont' },
 ]
